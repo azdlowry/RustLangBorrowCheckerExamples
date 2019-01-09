@@ -1,0 +1,4 @@
+[[package]]
+name = "rust_lang_borrow_checker_examples"
+version = "0.1.0"
+
