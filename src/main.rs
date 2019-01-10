@@ -1,19 +1,11 @@
 #![deny(warnings)]
 
 fn main() {
-    let mut x = 23;
-    let mut y = &mut x;
+    let mut x = vec![1, 2, 3];
 
-    inc(&mut y);
-    println!("{}", y);
-
-    inc(&mut x);
-    println!("{}", x);
-
-    let z = &x;
-    println!("{}", z);
-}
-
-fn inc(x: &mut i32) {
-    *x += 1;
+    for i in &x {
+        println!("{}", i);
+        //x.push(4);
+    }
+    println!("{:?}", x);
 }
